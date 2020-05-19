@@ -2,16 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>e32b1b20-fc56-491b-ad74-c1ccd97748e0</UserSecretsId>
+    <UserSecretsId>5fc9215d-717b-4533-8027-15823838dbae</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.10" />
+    <PackageReference Include="Ocelot" Version="15.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Ocelot">
+      <HintPath>..\..\..\AgrregatorService\AgrregatorService\bin\Debug\netcoreapp3.1\Ocelot.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>
